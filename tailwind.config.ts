@@ -8,10 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      keyframes: {
+        pulseGrow: {
+          '0%': { transform: 'translate(-50%, -50%) scale(1)', opacity: '0.5' },
+          '100%': { transform: 'translate(-50%, -50%) scale(1.5)', opacity: '0' },
+        },
+      },
+      animation: {
+        pulseGrow: 'pulseGrow 1.5s ease-out infinite',
       },
     },
   },
