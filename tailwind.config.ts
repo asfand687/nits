@@ -17,6 +17,9 @@ const config: Config = {
       animation: {
         pulseGrow: 'pulseGrow 1.5s ease-out infinite',
       },
+      boxShadow: {
+        'btn': '0px 9px 20px -5px rgba(233, 76, 84, 0.57) ',
+      }
     },
   },
   plugins: [],
