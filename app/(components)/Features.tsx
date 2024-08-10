@@ -1,13 +1,16 @@
 import Image from 'next/image'
 import React from 'react'
+import SectionHeader from './subcomponents/SectionHeader'
 
 const Features = () => {
   return (
     <div className='mt-20 pt-20 max-w-[1300px] mx-auto'>
-      <div className='text-center font-semibold'>
-        <h2 className='text-[#ea3a60] tracking-wider pb-4'>WHATS THE FUNCTION</h2>
-        <h2 className='text-4xl'>Meet the feature of product</h2>
-      </div>
+      <SectionHeader
+        slogan='WHATS THE FUNCTION'
+        title="Meet the feature of product"
+        textCenter
+        sloganGapClass='pb-4'
+      />
       <div className="flex gap-8 pt-20">
         <article className='flex-1'>
           <Image
