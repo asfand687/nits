@@ -19,6 +19,7 @@ const config: Config = {
       },
       boxShadow: {
         'btn': '0px 9px 20px -5px rgba(233, 76, 84, 0.57) ',
+        'card': '0px 4px 25px rgba(38, 78, 118, 0.1)'
       }
     },
   },
