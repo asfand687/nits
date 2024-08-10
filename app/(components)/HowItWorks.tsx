@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import SectionHeader from './subcomponents/SectionHeader'
 
 const HowItWorks = () => {
   return (
@@ -10,10 +11,14 @@ const HowItWorks = () => {
       }}
       className='bg-no-repeat bg-center bg-cover text-white pt-24 pb-40 flex flex-col gap-10'
     >
-      <div className='max-w-[1300px] mx-auto flex flex-col gap-2 text-center'>
-        <h2 className='tracking-widest font-bold opacity-70'>WHATS THE FUNCTION</h2>
-        <h2 className='text-4xl font-bold leading-[4rem]'>Let’s see how it works</h2>
-      </div>
+      
+      <SectionHeader
+        slogan='WHATS THE FUNCTION'
+        title="Let’s see how it works"
+        textCenter
+        sloganGapClass='font-bold opacity-70 pb-4 text-white'
+        titleFont='text-4xl font-bold'
+      />
       <div className='max-w-[1280px] mx-auto grid grid-cols-4 gap-8'>
         <article className='flex flex-col gap-4'>
           <div className='relative text-[#224381] w-16 h-16 rounded-3xl bg-white font-bold text-3xl inline-flex justify-center place-items-center'>
