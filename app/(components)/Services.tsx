@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import SectionHeader from './subcomponents/SectionHeader'
 
 const Services = () => {
   return (
@@ -33,10 +34,13 @@ const Services = () => {
         </div>
       </article>
       <article className="flex-1">
-        <div className='flex flex-col gap-2 pb-16'>
-          <h2 className='text-[#ea395f] tracking-widest pb-4 font-bold'>OUR SERVICES</h2>
-          <h2 className='text-5xl font-bold max-w-lg leading-[4rem]'>Business Goals Achieved with Design</h2>
-        </div>
+        <SectionHeader
+          slogan="OUR SERVICES"
+          title="Business Goals Achieved with Design"
+          gapClass='pb-16'
+          titleFont='text-5xl leading-[4rem]'
+          sloganGapClass='pb-2'
+        />
         <div className='flex flex-col gap-8'>
           <article className='flex gap-4'>
             <div>
