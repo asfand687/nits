@@ -75,10 +75,44 @@ const MoreFeatures = () => {
         </article>
       </div>
       {/* CORE FEATURES */}
-      <div>
-
-      </div>
-    </section>
+      <div className='flex gap-8 items-center'>
+        <article className="max-w-lg flex flex-col gap-6">
+          <div className='flex flex-col gap-2'>
+            <h2 className='text-[#ea395f] tracking-widest font-bold'>CORE FEATURES</h2>
+            <h2 className='text-5xl font-bold leading-[4rem]'>Smart Jackpots that you may love this anytime & anywhere</h2>
+          </div>
+          <p className='text-xl max-w-[29rem] leading-loose'>
+            Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.
+          </p>
+          <div>
+            <button
+              type="button"
+              className="border-4 border-[#ea3a60] rounded-full px-8 py-3 bg-[#ea3a60] text-white transition-all ease-in-out duration-300 hover:shadow-btn"
+            >
+              Get Started
+            </button>
+          </div>
+        </article>
+        <article className="flex-1 relative">
+          <Image
+            src="/woman-2.png"
+            width={800}
+            height={800}
+            alt="Woman"
+            className='max-w-2xl relative z-10'
+          />
+          <div className="max-w-[500px] absolute -bottom-14 -right-32 z-[0]">
+            <Image
+              src="/img-bg1.png"
+              alt="Image Bg"
+              width={500}
+              height={500}
+              className='-scale-x-[1]'
+            />
+          </div>
+        </article>
+      </div >
+    </section >
   )
 }
 
