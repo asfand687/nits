@@ -14,7 +14,7 @@ const Services = () => {
             className="max-w-[650px]"
           />
           {/* <div className='h-20 w-20 rounded-full animate-pulseGrow bg-red-400 absolute top-1/2 -translate-y-1/2 left-[23%]'></div> */}
-          <div className="bg-white p-4 rounded-full absolute top-1/2 -translate-y-1/2 left-[25%] -translate-x-[25%] z-20 animate-pulse">
+          <div className="bg-white p-4 rounded-full absolute top-1/2 -translate-y-1/2 left-[50%] -translate-x-[50%] z-20 animate-pulse">
             <Image
               src="/play.svg"
               alt="Play"
