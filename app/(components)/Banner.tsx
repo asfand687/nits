@@ -10,7 +10,7 @@ const Banner = () => {
           height={800}
           src="/banner-left.png"
           alt="Banner Left"
-          className='w-[400px] absolute left-0 bottom-[20px] z-[0]'
+          className='w-[clamp(150px,40vw,500px)] h-auto lg:h-[750px] absolute left-0 bottom-[40px] z-[0]'
         />
       </div>
       <div>
@@ -19,7 +19,7 @@ const Banner = () => {
             height={800}
             src="/banner-right.png"
             alt="Banner right"
-            className='w-[400px] absolute right-0 bottom-[50px] z-[0]'
+            className='w-[clamp(150px,40vw,400px)] h-auto  absolute right-0 bottom-[70px] z-[0]'
           />
       </div>
       <Image
@@ -27,7 +27,7 @@ const Banner = () => {
         height={800}
         src="/banner-img.png"
         alt="Banner Image"
-        className='max-w-[1100px] mx-auto relative z-[2]'
+        className='w-full max-w-[1100px] mx-auto relative z-[2]'
       />
     </div>
   )
