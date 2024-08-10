@@ -13,7 +13,7 @@ const Header = () => {
         </div>
         <button 
           type="button"
-          className="border-4 border-[#ea3a60] rounded-full px-8 py-3 bg-[#ea3a60] text-white transition-colors ease-in-out duration-300"
+          className="border-4 border-[#ea3a60] rounded-full px-8 py-3 bg-[#ea3a60] text-white transition-all ease-in-out duration-300 hover:shadow-btn"
         >
           Explore
         </button>
