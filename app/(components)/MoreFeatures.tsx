@@ -1,13 +1,16 @@
 import Image from 'next/image'
 import React from 'react'
+import SectionHeader from './subcomponents/SectionHeader'
 
 const MoreFeatures = () => {
   return (
     <section className='max-w-[1300px] mx-auto py-16 mt-20 flex flex-col gap-10'>
-      <div className='flex flex-col gap-2 text-center'>
-        <h2 className='text-[#ea395f] tracking-widest font-bold'>QUALITY FEATURES</h2>
-        <h2 className='text-4xl font-bold leading-[4rem]'>Amazing useful features</h2>
-      </div>
+      <SectionHeader
+        slogan='QUALITY FEATURES'
+        title="Amazing useful features"
+        textCenter
+        sloganGapClass='pb-4'
+      />
       <div className='grid grid-cols-2 justify-items-center gap-y-14'>
         <article className='flex gap-6'>
           <div>
@@ -77,10 +80,13 @@ const MoreFeatures = () => {
       {/* CORE FEATURES */}
       <div className='flex gap-8 items-center'>
         <article className="max-w-lg flex flex-col gap-6">
-          <div className='flex flex-col gap-2'>
-            <h2 className='text-[#ea395f] tracking-widest font-bold'>CORE FEATURES</h2>
-            <h2 className='text-5xl font-bold leading-[4rem]'>Smart Jackpots that you may love this anytime & anywhere</h2>
-          </div>
+          <SectionHeader
+            slogan="CORE FEATURES"
+            title="Smart Jackpots that you may love this anytime & anywhere"
+            gapClass='pb-16'
+            titleFont='text-5xl leading-[4rem]'
+            sloganGapClass='pb-2'
+          />
           <p className='text-xl max-w-[29rem] leading-loose'>
             Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.
           </p>
