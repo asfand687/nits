@@ -1,4 +1,5 @@
 import Image from "next/image"
+import MobileDrawer from "./subcomponents/MobileDrawer"
 
 const Navbar = () => {
   return (
@@ -11,7 +12,7 @@ const Navbar = () => {
           alt="Logo"
         />
       </article>
-      <ul className="flex gap-x-12 text-[rgb(234,58,96)] text-base">
+      <ul className="hidden md:flex gap-x-12 text-[#0f2137] text-base">
         <li>Home</li>
         <li>Features</li>
         <li>Pricing</li>
@@ -20,10 +21,11 @@ const Navbar = () => {
       <article>
         <button 
           type="button"
-          className="border-4 border-[rgb(234,58,96)] rounded-full px-10 py-4 text-[rgb(234,58,96)] hover:bg-[rgb(234,58,96)] hover:text-white transition-colors ease-in-out duration-300"
+          className="hidden md:block border-4 border-[#ea3a60] rounded-full px-10 py-4 text-[#ea3a60] hover:bg-[rgb(234,58,96)] hover:text-white transition-colors ease-in-out duration-300"
         >
           Get Started
         </button>
+        <MobileDrawer/>
       </article>
     </nav>
   )
