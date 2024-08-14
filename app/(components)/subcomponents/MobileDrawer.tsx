@@ -7,7 +7,7 @@ const MobileDrawer = () => {
   const [isDrawerShown, setIsDrawerShown] = React.useState(false)
   return (
     <div>
-      <div onClick={() => setIsDrawerShown(prev => !prev)}>
+      <div className="block md:hidden" onClick={() => setIsDrawerShown(prev => !prev)}>
         <Image
           width={26}
           height={26}

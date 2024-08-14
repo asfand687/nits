@@ -5,6 +5,7 @@ import Features from "./(components)/Features";
 import Services from "./(components)/Services";
 import MoreFeatures from "./(components)/MoreFeatures";
 import HowItWorks from "./(components)/HowItWorks";
+import Pricing from "./(components)/Pricing";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Services/>
       <MoreFeatures/>
       <HowItWorks/>
+      <Pricing/>
     </main>
   );
 }
