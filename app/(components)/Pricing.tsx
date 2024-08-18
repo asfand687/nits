@@ -1,10 +1,11 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { packages, responsive, sliderParams } from './data/packages'
 import SectionHeader from './subcomponents/SectionHeader'
 import Carousel from 'react-multi-carousel'
 import ButtonGroup from './subcomponents/ButtonGroup'
 import PriceCard from './subcomponents/PriceCard'
+import "react-multi-carousel/lib/styles.css";
 
 const Pricing = () => {
   const { monthly, annual } = packages
@@ -26,6 +27,8 @@ const Pricing = () => {
       })
     }
   }
+
+  
   return (
     <section className='max-w-[1300px] mx-auto py-16 mt-8 flex flex-col gap-10'>
       <SectionHeader
@@ -47,9 +50,8 @@ const Pricing = () => {
           </button>
         </div>
       </div>
-      <div>
+      <div className='px-4'>
         <Carousel 
-          customButtonGroup={<ButtonGroup/>}
           {...sliderParams}
         >
           {
@@ -57,7 +59,7 @@ const Pricing = () => {
               <article
                 key={pricingData.id}
               >
-                <PriceCard/>
+                <PriceCard pricingData={pricingData}/>
               </article>
             ))
           }
